@@ -404,7 +404,7 @@ textarea {
 @media only screen and (max-width: 767px) {
   .google-map {
     float: none; /* Remove float for smaller screens */
-    margin: 20px auto; /* Center the map on smaller screens */
+    margin: 20px auto 50px; /* Center the map on smaller screens */
   }
 
   /* Adjust styles for the map on smaller screens */
@@ -413,3 +413,4 @@ textarea {
     height: 300px; /* Adjust map height on smaller screens */
   }
 }
+

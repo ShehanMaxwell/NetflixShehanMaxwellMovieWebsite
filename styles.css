@@ -295,8 +295,8 @@ textarea {
 
 .grey-text-container {
   max-width: 400px; /* Adjust the max-width as needed */
-  height: auto; /* Adjust the height as needed */
-  overflow: hidden; /* Hide overflow content if the text exceeds the container */
+  height: auto;
+  overflow: hidden;
   text-align: justify; /* Justify the text */
   color: grey;
 }
@@ -307,8 +307,8 @@ textarea {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: flex-end; /* Right-align the search box */
-  max-width: 1500px; /* Adjust the max-width as needed */
-  margin: 20px 0; /* Add margin for better spacing */
+  max-width: 1500px;
+  margin: 20px 0;
 }
 
 .search-box input[type='text'] {
@@ -325,7 +325,7 @@ textarea {
 
 .left-corner {
   margin-right: 20px; /* Add right margin to create space */
-  color: grey; /* Grey text color */
+  color: grey;
 }
 
 .menu-dropdown {
@@ -358,7 +358,7 @@ textarea {
 /* Add media query for tablets */
 @media only screen and (max-width: 1024px) {
   .navbar {
-    padding: 10px; /* Adjust padding for tablets */
+    padding: 10px;
   }
 
   .logo img {
@@ -373,44 +373,39 @@ textarea {
   .menu-dropdown {
     top: 50px; /* Adjust dropdown position for tablets */
   }
-
-  /* Add more styles for tablet responsiveness as needed */
 }
 
-/* Add media query for mobile phones */
 @media only screen and (max-width: 767px) {
   .navbar {
-    padding: 5px; /* Adjust padding for smaller screens */
+    padding: 5px;
   }
 
   .logo img {
-    width: 60px; /* Adjust logo size for smaller screens */
+    width: 60px;
   }
 
   .menu a {
-    margin: 0 5px; /* Adjust menu item margin for smaller screens */
-    font-size: 12px; /* Adjust font size for smaller screens */
+    margin: 0 5px;
+    font-size: 12px;
   }
 
   .menu-dropdown {
-    top: 40px; /* Adjust dropdown position for smaller screens */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    top: 40px;
+    font-size: 14px;
   }
-
-  /* Add more styles for mobile responsiveness as needed */
 }
 
 /* Add media query for map responsiveness */
 @media only screen and (max-width: 767px) {
   .google-map {
-    float: none; /* Remove float for smaller screens */
-    margin: 20px auto 200px; /* Center the map on smaller screens */
+    float: none;
+    margin: 20px auto 200px;
   }
 
   /* Adjust styles for the map on smaller screens */
   .google-map iframe {
     display: none; /* Hide the map on smaller screens */
-    width: 100%; /* Make the map full width on smaller screens */
-    height: 300px; /* Adjust map height on smaller screens */
+    width: 100%;
+    height: 300px;
   }
 }

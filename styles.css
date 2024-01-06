@@ -354,3 +354,62 @@ textarea {
 .hamburger-menu:hover .menu-dropdown {
   display: block;
 }
+
+/* Add media query for tablets */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 10px; /* Adjust padding for tablets */
+  }
+
+  .logo img {
+    width: 80px; /* Adjust logo size for tablets */
+  }
+
+  .menu a {
+    margin: 0 10px; /* Adjust menu item margin for tablets */
+    font-size: 14px; /* Adjust font size for tablets */
+  }
+
+  .menu-dropdown {
+    top: 50px; /* Adjust dropdown position for tablets */
+  }
+
+  /* Add more styles for tablet responsiveness as needed */
+}
+
+/* Add media query for mobile phones */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .logo img {
+    width: 60px; /* Adjust logo size for smaller screens */
+  }
+
+  .menu a {
+    margin: 0 5px; /* Adjust menu item margin for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .menu-dropdown {
+    top: 40px; /* Adjust dropdown position for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Add more styles for mobile responsiveness as needed */
+}
+
+/* Add media query for map responsiveness */
+@media only screen and (max-width: 767px) {
+  .google-map {
+    float: none; /* Remove float for smaller screens */
+    margin: 20px auto; /* Center the map on smaller screens */
+  }
+
+  /* Adjust styles for the map on smaller screens */
+  .google-map iframe {
+    width: 100%; /* Make the map full width on smaller screens */
+    height: 300px; /* Adjust map height on smaller screens */
+  }
+}

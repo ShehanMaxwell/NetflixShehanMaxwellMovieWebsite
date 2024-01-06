@@ -1,0 +1,356 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0f0f;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.hamburger-menu img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 10px;
+  z-index: 1;
+}
+
+.menu-dropdown a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hamburger-menu:hover .menu-dropdown {
+  display: block;
+}
+
+.hero-area {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.animated-text,
+.animated-paragraph {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.animated-text {
+  font-size: 3em;
+}
+
+.animated-paragraph {
+  font-size: 1.5em;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.site-introduction {
+  background-color: #303030;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.site-introduction h1 {
+  font-size: 2em;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.collect-favorites,
+.search-box,
+.search-box h3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.search-box,
+.search-box h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-container input {
+  width: 50%;
+  padding: 10px;
+}
+
+.search-input-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.horizontal-line {
+  margin: 20px 5;
+  border: 1px solid white;
+}
+
+.images-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.movie-container {
+  position: relative;
+  width: 30%; /* Adjust the width as needed for the 3 horizontal grid */
+  margin-bottom: 20px;
+}
+
+.movie-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-details {
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  left: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(100%); /* Set initial translateY value */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.movie-container:hover .movie-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reach-us {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.reach-us h2 {
+  font-size: 2em;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half {
+  width: 48%;
+  margin-right: 4%;
+}
+
+.full {
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+}
+
+.form-row label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form-row input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  background-color: #ffd700;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.copyright {
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  padding: 20px;
+}
+
+.movie-details {
+  transition: transform 0.3s ease-in-out;
+}
+.site-introduction {
+  max-width: 100%; /* Full width */
+  background-color: rgb(20, 20, 20);
+}
+
+.intro-container {
+  padding: 10px; /* Add padding for better visualization */
+  text-align: left; /* Align the text to the left */
+}
+
+.site-introduction h1,
+.site-introduction .grey-text {
+  text-align: left; /* Align the heading and paragraph to the left */
+}
+
+.grey-text-container {
+  max-width: 400px; /* Adjust the max-width as needed */
+  height: auto; /* Adjust the height as needed */
+  overflow: hidden; /* Hide overflow content if the text exceeds the container */
+  text-align: justify; /* Justify the text */
+  color: grey;
+}
+
+/* Search box fields */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: flex-end; /* Right-align the search box */
+  max-width: 1500px; /* Adjust the max-width as needed */
+  margin: 20px 0; /* Add margin for better spacing */
+}
+
+.search-box input[type='text'] {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color: grey;
+  background-color: black;
+  outline: none;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.left-corner {
+  margin-right: 20px; /* Add right margin to create space */
+  color: grey; /* Grey text color */
+}
+
+.menu-dropdown {
+  font-size: 20px; /* Adjust the size as needed */
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 10px;
+  z-index: 1;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hamburger-menu:hover .menu-dropdown {
+  display: block;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxwell Movie Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Assets/Logos/Logo white.svg" alt="Logo" />
+      </div>
+      <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#">OUR SCREENS</a>
+        <a href="#">SCHEDULE</a>
+        <a href="#">MOVIE LIBRARY</a>
+        <a href="#">LOCATION & CONTACT</a>
+      </div>
+      <div class="hamburger-menu">
+        <img src="Assets/Icons/Menu White.svg" alt="Menu Icon" id="menu-icon" />
+        <div class="menu-dropdown" id="menu-dropdown">
+          <a href="#">Dummy Item 1</a>
+          <a href="#">Dummy Item 2</a>
+          <a href="#">Dummy Item 3</a>
+          <a href="#">Dummy Item 4</a>
+          <a href="#">Dummy Item 5</a>
+          <a href="#">Dummy Item 6</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Area with Images -->
+    <div class="hero-area">
+      <img src="Assets/HeaderImage.jpg" alt="Header Image" />
+      <div class="hero-text">
+        <h1 class="animated-text">Welcome to Your Movie Experience</h1>
+        <p class="animated-paragraph">
+          Explore our vast library of movies and find your favorites.
+        </p>
+      </div>
+    </div>
+
+    <!-- Site Introduction -->
+    <div class="site-introduction">
+      <h1>MOVIE LIBRARY</h1>
+      <div class="intro-container">
+        <p class="grey-text-container">
+          Welcome to our extensive Movie Library! Explore a diverse collection
+          of films ranging from timeless classics to the latest blockbusters.
+          Immerse yourself in the world of entertainment, discover hidden gems,
+          and stay up-to-date with the hottest releases. Whether you're a
+          cinephile seeking iconic masterpieces or a casual viewer in search of
+          thrilling stories, our Movie Library has something for everyone. Grab
+          your popcorn and embark on a journey through the magic of cinema with
+          our curated selection of films.
+        </p>
+      </div>
+    </div>
+
+    <!-- Collect Your Favorites Section -->
+    <div class="collect-favorites">
+      <div class="search-box">
+        <h1 class="left-corner">Collect your favorites</h1>
+
+        <input type="text" placeholder="Search movie title" />
+        <!-- <button>
+          <img src="Assets/Icons/Search Black.svg" alt="Search Icon" />
+        </button> -->
+      </div>
+    </div>
+
+    <!-- Horizontal Line -->
+    <hr class="horizontal-line" />
+
+    <!-- Images Grid -->
+    <div class="images-grid"></div>
+
+    <!-- How to Reach Us Section -->
+    <div class="reach-us">
+      <h2>How to reach us</h2>
+      <p class="grey-text">
+        Contact us with any inquiries or feedback using the form below.
+      </p>
+      <!-- Contact Form  -->
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        .contact-form {
+          max-width: 700px;
+          padding: 20px;
+        }
+
+        .form-row {
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .half,
+        .full {
+          width: 49%;
+          box-sizing: border-box;
+        }
+
+        input[type='text'],
+        input[type='email'],
+        input[type='tel'],
+        textarea {
+          width: 100%;
+          padding: 15px;
+          margin: 10px 0;
+          box-sizing: border-box;
+          border: 2px solid grey;
+          border-radius: 10px;
+          background-color: #f2f2f2;
+        }
+
+        textarea {
+          resize: vertical;
+        }
+
+        label {
+          display: block;
+        }
+
+        input[type='checkbox'] {
+          margin-right: 5px;
+        }
+
+        .submit-button {
+          padding: 15px;
+          background-color: #dba800e3;
+          color: white;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
+        .submit-button:hover {
+          background-color: #644900; /* Darker yello on hover */
+        }
+      </style>
+
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="half">
+            <input type="text" placeholder="First Name *" required />
+          </div>
+          <div class="half">
+            <input type="text" placeholder="Last Name *" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="full">
+            <input type="email" placeholder="Email *" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="half">
+            <input type="tel" placeholder="Telephone Number" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="full">
+            <textarea placeholder="Your Message *" required></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="full">
+            <label>
+              <input type="checkbox" required />
+              I agree to Terms & Conditions
+            </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="full">
+            <button type="submit" class="submit-button">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+
+      <div
+        class="google-map"
+        style="float: right; margin-top: -600px; margin-right: 50px"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.3807403172596!2d79.940426!3d6.8448775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25069caa2f53b%3A0xe7eae3a8b1f1214d!2seBEYONDS%20eBusiness%20%26%20Digital%20Solutions!5e0!3m2!1sen!2slk!4v1704520791564!5m2!1sen!2slk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="left-section">
+        <p class="white-text"><strong>IT group</strong></p>
+        <br />
+        <p class="white-text">C. Salvador de Madariaga, 1</p>
+        <br />
+        <p class="white-text">28027 Madrid, Spain</p>
+      </div>
+      <div class="right-section">
+        <p class="white-text">Follow us on</p>
+        <br />
+        <img src="Assets/Icons/Twitter White.svg" alt="Twitter Icon" />
+        <img src="Assets/Icons/Youtube White.svg" alt="YouTube Icon" />
+      </div>
+    </footer>
+    <!-- Copyright Section -->
+    <div class="copyright">
+      <hr class="horizontal-line" />
+      <p class="grey-text">
+        Copyright 2023 Shehan Maxwell. All rights reserved.
+      </p>
+      <p class="grey-text">
+        Photos by Felix Mooneeram & Serge Kurtuzov on Unsplash
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

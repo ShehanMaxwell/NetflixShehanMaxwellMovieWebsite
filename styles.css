@@ -404,13 +404,13 @@ textarea {
 @media only screen and (max-width: 767px) {
   .google-map {
     float: none; /* Remove float for smaller screens */
-    margin: 20px auto 50px; /* Center the map on smaller screens */
+    margin: 20px auto 200px; /* Center the map on smaller screens */
   }
 
   /* Adjust styles for the map on smaller screens */
   .google-map iframe {
+    display: none; /* Hide the map on smaller screens */
     width: 100%; /* Make the map full width on smaller screens */
     height: 300px; /* Adjust map height on smaller screens */
   }
 }
-

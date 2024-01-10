@@ -18,17 +18,21 @@
         <a href="#">SCHEDULE</a>
         <a href="#">MOVIE LIBRARY</a>
         <a href="#">LOCATION & CONTACT</a>
-      </div>
-      <div class="hamburger-menu">
-        <img src="Assets/Icons/Menu White.svg" alt="Menu Icon" id="menu-icon" />
-        <div class="menu-dropdown" id="menu-dropdown">
-          <a href="#">Dummy Item 1</a>
-          <a href="#">Dummy Item 2</a>
-          <a href="#">Dummy Item 3</a>
-          <a href="#">Dummy Item 4</a>
-          <a href="#">Dummy Item 5</a>
-          <a href="#">Dummy Item 6</a>
-        </div>
+        <span class="hamburger-menu">
+          <img
+            src="Assets/Icons/Menu White.svg"
+            alt="Menu Icon"
+            id="menu-icon"
+          />
+          <div class="menu-dropdown" id="menu-dropdown">
+            <a href="#">Dummy Item 1</a>
+            <a href="#">Dummy Item 2</a>
+            <a href="#">Dummy Item 3</a>
+            <a href="#">Dummy Item 4</a>
+            <a href="#">Dummy Item 5</a>
+            <a href="#">Dummy Item 6</a>
+          </div>
+        </span>
       </div>
     </nav>
 
@@ -63,17 +67,19 @@
     <!-- Collect Your Favorites Section -->
     <div class="collect-favorites">
       <div class="search-box">
-        <h1 class="left-corner">Collect your favorites</h1>
-
-        <input type="text" placeholder="Search movie title" />
+        <div style="width: 50%">
+          <h1 class="left-corner">Collect your favorites</h1>
+        </div>
+        <div style="width: 50%">
+          <input type="text" placeholder="&#x1F50D; Search movie title" />
+        </div>
         <!-- <button>
           <img src="Assets/Icons/Search Black.svg" alt="Search Icon" />
         </button> -->
       </div>
+      <!-- Horizontal Line -->
+      <hr class="horizontal-line-collect-fav" />
     </div>
-
-    <!-- Horizontal Line -->
-    <hr class="horizontal-line" />
 
     <!-- Images Grid -->
     <div class="images-grid"></div>
@@ -84,91 +90,38 @@
       <p class="grey-text">
         Contact us with any inquiries or feedback using the form below.
       </p>
+
       <!-- Contact Form  -->
-      <style>
-        body {
-          margin: 0;
-          padding: 0;
-        }
-
-        .contact-form {
-          max-width: 700px;
-          padding: 20px;
-        }
-
-        .form-row {
-          margin-bottom: 20px;
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .half,
-        .full {
-          width: 49%;
-          box-sizing: border-box;
-        }
-
-        input[type='text'],
-        input[type='email'],
-        input[type='tel'],
-        textarea {
-          width: 100%;
-          padding: 15px;
-          margin: 10px 0;
-          box-sizing: border-box;
-          border: 2px solid grey;
-          border-radius: 10px;
-          background-color: #f2f2f2;
-        }
-
-        textarea {
-          resize: vertical;
-        }
-
-        label {
-          display: block;
-        }
-
-        input[type='checkbox'] {
-          margin-right: 5px;
-        }
-
-        .submit-button {
-          padding: 15px;
-          background-color: #dba800e3;
-          color: white;
-          border: none;
-          border-radius: 10px;
-          cursor: pointer;
-        }
-
-        .submit-button:hover {
-          background-color: #644900; /* Darker yello on hover */
-        }
-      </style>
 
       <form class="contact-form">
         <div class="form-row">
           <div class="half">
-            <input type="text" placeholder="First Name *" required />
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" placeholder="" required />
           </div>
           <div class="half">
-            <input type="text" placeholder="Last Name *" required />
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" placeholder="" required />
           </div>
         </div>
         <div class="form-row">
           <div class="full">
-            <input type="email" placeholder="Email *" required />
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="" required />
           </div>
         </div>
+
         <div class="form-row">
-          <div class="half">
-            <input type="tel" placeholder="Telephone Number" />
+          <div class="full">
+            <label for="last-name">Telephone</label>
+            <input type="tel" placeholder="" />
           </div>
         </div>
         <div class="form-row">
           <div class="full">
-            <textarea placeholder="Your Message *" required></textarea>
+            <label for="last-name">Message *</label>
+            <textarea placeholder="" required></textarea>
+            <label for="last-name">*required ﬁelds</label>
           </div>
         </div>
         <div class="form-row">
@@ -179,10 +132,11 @@
             </label>
           </div>
         </div>
+
         <div class="form-row">
-          <div class="full">
-            <button type="submit" class="submit-button">SUBMIT</button>
-          </div>
+          <div class="submit-button-edit"></div>
+
+          <button type="submit" class="submit-button">SUBMIT</button>
         </div>
       </form>
 
@@ -217,21 +171,29 @@
         <p class="white-text">28027 Madrid, Spain</p>
       </div>
       <div class="right-section">
-        <p class="white-text">Follow us on</p>
-        <br />
-        <img src="Assets/Icons/Twitter White.svg" alt="Twitter Icon" />
-        <img src="Assets/Icons/Youtube White.svg" alt="YouTube Icon" />
+        <p class="white-text">
+          Follow us on &nbsp;&nbsp;&nbsp;
+
+          <img src="Assets/Icons/Twitter White.svg" alt="Twitter Icon" />
+          <img src="Assets/Icons/Youtube White.svg" alt="YouTube Icon" />
+        </p>
       </div>
     </footer>
     <!-- Copyright Section -->
     <div class="copyright">
       <hr class="horizontal-line" />
-      <p class="grey-text">
-        Copyright 2023 Shehan Maxwell. All rights reserved.
-      </p>
-      <p class="grey-text">
-        Photos by Felix Mooneeram & Serge Kurtuzov on Unsplash
-      </p>
+      <div class="footer-box">
+        <div>
+          <p class="grey-text">
+            Copyright 2023 Shehan Maxwell. All rights reserved.
+          </p>
+        </div>
+        <div>
+          <p class="grey-text">
+            Photos by Felix Mooneeram & Serge Kurtuzov on Unsplash
+          </p>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>

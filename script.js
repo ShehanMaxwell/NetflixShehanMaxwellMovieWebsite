@@ -41,7 +41,7 @@ const renderMovies = (movies) => {
 
     // Add event listener for mouseout to move movie details to the bottom
     movieContainer.addEventListener('mouseout', () => {
-      movieDetails.style.transform = 'translateY(100%)';
+      movieDetails.style.transform = 'translateY(5%)';
     });
   });
 };
